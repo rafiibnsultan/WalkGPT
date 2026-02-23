@@ -80,14 +80,17 @@ pip install -r requirements.txt
 
 Check the instructions for training and evaluation in instructions.md
 
-## 🔗 Acknowledgments
+## Merge LoRA Weights
 
-This work builds upon and benefits from several outstanding open-source contributions:
+Merge the LoRA weights from `pytorch_model.bin` and save the resulting model to your desired path in Hugging Face format:
 
-- [PixelLM](https://github.com/MaverickRen/PixelLM) — for their open-source grounding framework that helped shape our implementation.
-- [SANPO Dataset](https://github.com/google-research-datasets/sanpo_dataset) — whose real-world pedestrian images made this research possible.
+```bash
+CUDA_VISIBLE_DEVICES="" python merge_lora_weights_and_save_hf_model.py \
+    --version="PATH_TO_LLAVA" \
+    --weight="PATH_TO_pytorch_model.bin" \
+    --save_path="PATH_TO_SAVED_MODEL"
+```
 
-We sincerely thank the authors for making their resources publicly available.
 
 ## Citation
 
@@ -100,3 +103,13 @@ If you find this work useful in your research, please cite:
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2026}
 }
+```
+
+## 🔗 Acknowledgments
+
+This work builds upon and benefits from several outstanding open-source contributions:
+
+- [PixelLM](https://github.com/MaverickRen/PixelLM) — for their open-source grounding framework that helped shape our implementation.
+- [SANPO Dataset](https://github.com/google-research-datasets/sanpo_dataset) — whose real-world pedestrian images made this research possible.
+
+We sincerely thank the authors for making their resources publicly available.
