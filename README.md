@@ -91,6 +91,11 @@ CUDA_VISIBLE_DEVICES="" python merge_lora_weights_and_save_hf_model.py \
     --save_path="PATH_TO_SAVED_MODEL"
 ```
 
+## Grant Information
+
+This work was supported by the National Institutes of Health (NIH), National Eye Institute (NEI), under Grant R61EY037504.
+
+Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Institutes of Health.
 
 ## Citation
 
