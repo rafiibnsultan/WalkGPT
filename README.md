@@ -1,6 +1,7 @@
 # WalkGPT
 
 > **WalkGPT: Grounded Vision–Language Conversation with Depth-Aware Segmentation for Pedestrian Navigation**
+
 > Rafi Ibn Sultan, Hui Zhu, Xiangyu Zhou, Chengyin Li, Prashant Khanduri, Marco Brocanelli, Dongxiao Zhu
 > Accepted at **CVPR 2026**  
 > 📄 Paper link: *Coming soon*
