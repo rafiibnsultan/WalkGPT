@@ -80,16 +80,14 @@ pip install -r requirements.txt
 
 Check the instructions for training and evaluation in instructions.md
 
-## Merge LoRA Weights
+## 📦 Model Weights
 
-Merge the LoRA weights from `pytorch_model.bin` and save the resulting model to your desired path in Hugging Face format:
+The pretrained **WalkGPT-13B** model weights are available on Hugging Face:
 
-```bash
-CUDA_VISIBLE_DEVICES="" python merge_lora_weights_and_save_hf_model.py \
-    --version="PATH_TO_LLAVA" \
-    --weight="PATH_TO_pytorch_model.bin" \
-    --save_path="PATH_TO_SAVED_MODEL"
-```
+👉 **[Download WalkGPT-13B Weights](https://huggingface.co/rafiibnsultan/walkgpt-13b)**
+
+The repository contains the merged Hugging Face checkpoint and tokenizer files required to run inference.
+
 
 ## Grant Information
 
