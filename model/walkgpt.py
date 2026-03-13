@@ -280,6 +280,7 @@ class walkgptForCausalLM(LlavaLlamaForCausalLM):
         **kwargs,
     ):
         # `offset` maps each image to its corresponding text rows.
+        image_embeddings = self.get_visual_embs(images)
         batch_size = images.shape[0]
         assert batch_size == len(offset) - 1
         
@@ -500,7 +501,6 @@ class walkgptForCausalLM(LlavaLlamaForCausalLM):
             img_embeddings_.append(batch_img_embeddings)
 
         img_embeddings = img_embeddings_
-        image_embeddings = img_embeddings
 
         
         multimask_output = False
