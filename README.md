@@ -85,9 +85,9 @@ Check the instructions for training and evaluation in instructions.md
 The pretrained **WalkGPT-13B** model weights are available on Hugging Face:
 
 👉 **[Download WalkGPT-13B Weights](https://huggingface.co/rafiibnsultan/walkgpt-13b)**
-
+We currently release the **WalkGPT-13B** model weights.
 The repository contains the merged Hugging Face checkpoint and tokenizer files required to run inference.
-
+Additional model variants may be released in the future.
 
 ## Grant Information
 
