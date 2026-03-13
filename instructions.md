@@ -39,10 +39,10 @@ CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=1 PYTORCH_CUDA_ALLOC_CONF=expa
 
 ## 3. Standalone Evaluation Command
 
-Use this command to evaluate with `walkgpt_evaluation.py` and save text responses:
+Use this command to evaluate with `evaluation_walkgpt.py` and save text responses:
 
 ```bash
-CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=1 PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True /home/hm4013/.conda/envs/walkgpt/bin/torchrun --master_port=24999 walkgpt_evaluation.py --version "/data/Rafi/dataset/PixelLM-13B/hf_model/" --dataset_dir="/data/Rafi/dataset" --val_dataset="PAVE|val" --exp_name="walkgpt-13b-eval" --seg_token_num=1 --num_classes_per_question=20 --pad_train_clip_images --preprocessor_config="./configs/preprocessor_448.json" --resize_vision_tower --resize_vision_tower_size=448 --use_expand_question_list --image_feature_scale_num=1 --separate_mm_projector --log_base_dir="/data/Rafi/llava_weights/" --vision-tower="/data/Rafi/dataset/clip-vit-large-patch14-336" --weight="/data/Rafi/llava_weights/walkgpt-13b_reb/ckpt_model/global_step270/mp_rank_00_model_states.pt" --save_responses_path="/home/hm4013/walkgpt/responses/model_reb.json" --workers=1
+CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=1 PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True /home/hm4013/.conda/envs/walkgpt/bin/torchrun --master_port=24999 evaluation_walkgpt.py --version "/data/Rafi/dataset/PixelLM-13B/hf_model/" --dataset_dir="/data/Rafi/dataset" --val_dataset="PAVE|val" --exp_name="walkgpt-13b-eval" --seg_token_num=1 --num_classes_per_question=20 --pad_train_clip_images --preprocessor_config="./configs/preprocessor_448.json" --resize_vision_tower --resize_vision_tower_size=448 --use_expand_question_list --image_feature_scale_num=1 --separate_mm_projector --log_base_dir="/data/Rafi/llava_weights/" --vision-tower="/data/Rafi/dataset/clip-vit-large-patch14-336" --weight="/data/Rafi/llava_weights/walkgpt-13b_reb/ckpt_model/global_step270/mp_rank_00_model_states.pt" --save_responses_path="/home/hm4013/walkgpt/responses/model_reb.json" --workers=1
 ```
 
 ## Notes
