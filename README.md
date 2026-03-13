@@ -4,7 +4,7 @@
 
 > Rafi Ibn Sultan, Hui Zhu, Xiangyu Zhou, Chengyin Li, Prashant Khanduri, Marco Brocanelli, Dongxiao Zhu
 > Accepted at **CVPR 2026**  
-> 📄 Paper link: *Coming soon*
+> 📄 Paper link: https://arxiv.org/abs/2603.10703
 
 WalkGPT is a pixel-grounded vision–language model for accessibility-aware navigation with depth-aware segmentation and structured reasoning.
 
@@ -102,11 +102,14 @@ Any opinions, findings, and conclusions or recommendations expressed in this mat
 If you find this work useful in your research, please cite:
 
 ```bibtex
-@inproceedings{walkgpt2026,
-  title={WalkGPT: Grounded Vision–Language Conversation with Depth-Aware Segmentation for Pedestrian Navigation},
-  author={Rafi Ibn Sultan, Hui Zhu, Xiangyu Zhou, Chengyin Li, Prashant Khanduri, Marco Brocanelli, Dongxiao Zhu},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2026}
+@misc{sultan2026walkgptgroundedvisionlanguageconversation,
+      title={WalkGPT: Grounded Vision-Language Conversation with Depth-Aware Segmentation for Pedestrian Navigation}, 
+      author={Rafi Ibn Sultan and Hui Zhu and Xiangyu Zhou and Chengyin Li and Prashant Khanduri and Marco Brocanelli and Dongxiao Zhu},
+      year={2026},
+      eprint={2603.10703},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2603.10703}, 
 }
 ```
 
