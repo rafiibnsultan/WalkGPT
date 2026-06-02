@@ -100,14 +100,13 @@ Any opinions, findings, and conclusions or recommendations expressed in this mat
 If you find this work useful in your research, please cite:
 
 ```bibtex
-@misc{sultan2026walkgptgroundedvisionlanguageconversation,
-      title={WalkGPT: Grounded Vision-Language Conversation with Depth-Aware Segmentation for Pedestrian Navigation}, 
-      author={Rafi Ibn Sultan and Hui Zhu and Xiangyu Zhou and Chengyin Li and Prashant Khanduri and Marco Brocanelli and Dongxiao Zhu},
-      year={2026},
-      eprint={2603.10703},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2603.10703}, 
+@InProceedings{Ibn_Sultan_2026_CVPR,
+    author    = {Ibn Sultan, Rafi and Zhu, Hui and Zhou, Xiangyu and Li, Chengyin and Khanduri, Prashant and Brocanelli, Marco and Zhu, Dongxiao},
+    title     = {WalkGPT: Grounded Vision-Language Conversation with Depth-Aware Segmentation for Pedestrian Navigation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {40085-40095}
 }
 ```
 
